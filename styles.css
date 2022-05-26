@@ -127,12 +127,13 @@ h1 {
 
 .question img {
     width: 12px;
+    transition: 0.3s ease-in-out;
 }
 
 .answer {
-    height: 0;
+    max-height: 0;
     overflow: hidden;
-    
+    transition: 0.3s ease;
 }
 
 .answer p {
@@ -144,8 +145,7 @@ h1 {
 }
 
 .active .answer {
-    height: auto;
-    display: block;
+    max-height: 100px;
     margin-top: 1em;
 }
 
@@ -153,12 +153,8 @@ footer {
     margin-bottom: 1em;
 }
 
-
-
-
 .attribution a { 
     color: var(--soft-red); 
 }
-
 
 /*   MEDIA QUERIES   */
