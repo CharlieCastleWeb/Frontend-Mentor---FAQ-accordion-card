@@ -29,6 +29,7 @@ body {
 h1 {
     font-weight: bolder;
     font-size: 2rem;
+    text-align: center;
 }
 
 .question {
@@ -77,7 +78,7 @@ main {
     justify-content: space-between;
 }
 
-main picture {
+.hero-image {
     transform: translate(0, -115px);
 }
 
@@ -85,8 +86,13 @@ main picture img {
     width: 250px;
 }
 
+.desktop-box {
+    display: none;
+}
+
 h1 {
-    margin-top: -2em;
+    margin-top: -2.5em;
+    margin-bottom: 0.5em;
 }
 
 .attribution { 
@@ -158,3 +164,43 @@ footer {
 }
 
 /*   MEDIA QUERIES   */
+
+@media (min-width: 650px) {
+    main {
+        background:white;
+        flex-direction: row;
+        background-position: 0% 0%;
+        max-width: 900px;
+    }
+
+    .hero-image {
+        background: url("./images/bg-pattern-desktop.svg") no-repeat;
+        background-position: 0% 80%;
+        background-size: 50em;
+        height: 100%;
+        transform: translate(0, 0);
+        margin-top: auto;
+    }
+
+    main picture {
+        
+    }
+
+    .hero-image {
+        
+        
+    }
+
+    main picture img {
+        width: 350px;
+    }
+
+    .desktop-box {
+        /* position: absolute; */
+        /* transform: translate(0, 15%); */
+    }
+
+    h1 {
+        margin: 0;
+    }
+}
