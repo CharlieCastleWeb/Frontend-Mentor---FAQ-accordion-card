@@ -171,33 +171,39 @@ footer {
         flex-direction: row;
         background-position: 0% 0%;
         max-width: 900px;
+        overflow: hidden;
     }
 
     .hero-image {
         background: url("./images/bg-pattern-desktop.svg") no-repeat;
-        background-position: 0% 80%;
-        background-size: 50em;
+        background-position: 100% 80%;
+        background-size: 60em;
         height: 100%;
-        transform: translate(0, 0);
-        margin-top: auto;
+        transform: translate(-15%, 0);
+        display: flex;
+        align-items: center;
     }
 
     main picture {
         
     }
 
-    .hero-image {
-        
-        
+    .hero-image img{
+        margin-top: auto;
     }
 
     main picture img {
-        width: 350px;
+        width: 380px;
     }
 
     .desktop-box {
-        /* position: absolute; */
-        /* transform: translate(0, 15%); */
+        display: block;
+        transform: translate(-450%, 50%);
+    }
+
+    .desktop-box img {
+        width: 100px;
+
     }
 
     h1 {
