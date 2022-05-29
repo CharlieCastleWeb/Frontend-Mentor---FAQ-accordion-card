@@ -170,15 +170,16 @@ footer {
         background:white;
         flex-direction: row;
         background-position: 0% 0%;
-        max-width: 900px;
+        max-width: 800px;
         overflow: hidden;
     }
 
     .hero-image {
         background: url("./images/bg-pattern-desktop.svg") no-repeat;
-        background-position: 100% 80%;
-        background-size: 60em;
+        background-position: 100% 70%;
+        background-size: 70em;
         height: 100%;
+        max-width: 100%;
         transform: translate(-15%, 0);
         display: flex;
         align-items: center;
@@ -198,15 +199,23 @@ footer {
 
     .desktop-box {
         display: block;
-        transform: translate(-450%, 50%);
+        position: fixed;
+        transform: translate(-50%, 30%);
+        /* top: 0;
+        left: 0; */
     }
 
     .desktop-box img {
-        width: 100px;
+        width: 150px;
 
     }
 
+    .accordion {
+        margin: 1.5em 4em 6em -1em;
+    }
+
     h1 {
-        margin: 0;
+        margin-top: 1em;
+        text-align: left;
     }
 }
